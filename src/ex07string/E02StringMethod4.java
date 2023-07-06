@@ -81,7 +81,12 @@ public class E02StringMethod4 {
 		
 		//////////////////////////////////
 		
+		// my.file.images.jpg
 		
+		String file = "my.file.images.jpg";
+		int dotnum = file.lastIndexOf(".") ;
+		System.out.println(file.substring(dotnum+1));
+				
 		
 	}
 

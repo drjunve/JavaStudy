@@ -47,6 +47,7 @@ public class E02StringMethod3 {
 			System.out.printf("phoneArr[%d]=%s\n",
 					i, phoneArr[i]);
 		}
+
 		/*
 		구분자로 사용한 문자열이 없는 경우 문자열 전체가 통째로 
 		반환되어 배열의 크기는 1이된다. 

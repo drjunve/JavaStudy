@@ -1,7 +1,7 @@
 package ex05Method;
 
 /*
-메서드 오버로(Method Overloading
+메서드 오버로딩(Method Overloading)
 : 동일한 이름의 메서드를 2개이상 정의하는 것을 말한다.
 -매개변수의 갯수가 다르거나 자료형이 다를 때 성립한다.
 -반환타입만 다른것은 혀용되지 않는다.
