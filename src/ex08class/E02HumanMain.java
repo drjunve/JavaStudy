@@ -30,7 +30,7 @@ public class E02HumanMain {
 			human.walking();
 		}
 		human.showState();
-		for(int i =1 ; i<-20 ; i++) { 
+		for(int i =1 ; i<=20 ; i++) { 
 			human.eating();
 		}
 		human.showState();
