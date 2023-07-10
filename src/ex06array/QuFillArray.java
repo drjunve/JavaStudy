@@ -16,7 +16,6 @@ public class QuFillArray {
 			System.out.println(num);
 			//입력 받은 정수를 첫번째 배열에 삽입한다.
 			tenArr1[i] = num;
-			tenArr2[i] = num;
 			
 			//입력 받은 정수가 홀수라면 두번재 배열 앞부분 부터 삽입한다.
 			if(!(num%2==0)) {
@@ -25,7 +24,9 @@ public class QuFillArray {
 			
 			//입력 받은 정수가 짝수라면 두번재 배열 뒷부분 부터 삽입한다.
 			if (num%2==0) {
-				tenArr2[9-i] = num;
+				for(int arr2Num = 9 ; arr2Num<=0 ; arr2Num--) {
+					tenArr2[arr2Num] = num;
+				}
 			}
 		}
 		
