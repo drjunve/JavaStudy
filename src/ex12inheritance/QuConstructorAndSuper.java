@@ -12,8 +12,8 @@ class HybridWaterCar extends HybridCar
 {
 		int water;
 		public HybridWaterCar(int gasoline, int electric, int water) {
-			this.gasoline = gasoline;
-			this.electric = electric;
+			super.gasoline = gasoline;
+			super.electric = electric;
 			this.water = water;
 		}
 		public void showNowGauge()
