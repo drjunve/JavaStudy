@@ -19,6 +19,7 @@ class Circle{
 	public Circle(int radian) {
 		this.radian = radian;
 	}
+	System.out.println("");
 	//블라블라
 }
 //원 2개를 겹쳐서 링을 표현하는 클래스
@@ -34,6 +35,8 @@ class Ring{
 	
 	void showRingInfo() {
 		System.out.println("안쪽원의 정보:");
+		System.out.println("반지름 : ");
+		System.out.println(inCirR);
 		
 	}
 	//블라블라
