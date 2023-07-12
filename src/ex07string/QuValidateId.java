@@ -8,25 +8,44 @@ public class QuValidateId {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("아이디를 입력하세요 : ");
-		String idChar = scanner.next();
+		String id = scanner.nextLine();
 		
-		if(8 <= idChar.length() && idChar.length()<= 12) {
+		boolean isOk = ValidateId(id);
+		
+		
+		if(isOk==true) {
+			System.out.println("사용 가능한 ID입니다.");
 		}
-		if( int i = 0;
-				switch (idChar.charAt(i)>='a' && idChar.charAt(i)<='z')
-				caseidChar.charAt(0)>='a' && idChar.charAt(0)<='z'
-			&& idChar.charAt(1)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(2)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(3)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(4)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(5)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(6)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(7)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(8)>='a' && idChar.charAt(1)<='z'
-			&& idChar.charAt(9)>='a' && idChar.charAt(1)<='z'
-				) {
+		else {
+			System.out.println("사용 불가능한 ID입니다.");
+		}
+		
+	}
+	
+	static boolean ValidateId(String id) {
+		
+		boolean idOk = true;
+		
+		if(id.length()>=8 && id.length()<=12) {
+			idOk = true;
+		}
+		else {
+			System.out.println("아이디는 8~12자 사이로만 사용할 수 있다.");
+			idOk = false;
+		}
+		
+		for(int i=0 ; i<id.length(); i++) {
+			if(!(id.charAt(i) >= 'a' && id.charAt(i)<='z') &&
+				!(id.charAt(i) >= 'A' && id.charAt(i)<='Z') &&
+				!(id.charAt(i) >= '0' && id.charAt(i)<='9')) {
+				idOk =false;
+				System.out.println("아이디는 영문과 숫자로만 입력할 수 있다.");
+				break;
+			}
 			
-		}			
+		}
+		
+		return idOk;
 		
 	}
 
