@@ -8,8 +8,10 @@ public class QuFillArray {
 		Scanner scanner = new Scanner(System.in);
 		int[] tenArr1 = new int[10];
 		int[] tenArr2 = new int[10];
+		
 		int oddStartNum = 0;
 		int evenStartNum = tenArr2.length-1;
+		
 		for(int i=0 ; i<tenArr1.length ; i++) {
 			//정수를 입력받는다.
 			System.out.print((i+1)+"번째 정수를 입력하세요:");

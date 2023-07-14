@@ -24,6 +24,13 @@ public class QuNumberCounter {
 				count4 += 1;
 			}
 		}
+		
+		/*
+		해법2 : 검색한 숫자가 만약 1이라면 counter 배열의 0번 인덱스를 
+		1증가시키면 되므로 아래와 같이 표현하 수 있따.
+		counter[answer[i]-1]++;
+		 * */
+		
 		System.out.println("counter[0] => "+count1);
 		System.out.println("counter[1] => "+count2);
 		System.out.println("counter[2] => "+count3);

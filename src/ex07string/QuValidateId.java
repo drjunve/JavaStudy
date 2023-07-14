@@ -10,6 +10,14 @@ public class QuValidateId {
 		System.out.print("아이디를 입력하세요 : ");
 		String id = scanner.nextLine();
 		
+		/* 만약 String을 Javascript처럼 배열처럼 만들고 싶다면
+		 * toCharArray() 메서드를 사용하면 된다. 해당 메서드는
+		 * String을 char타입의 배열로 변환해준다. */
+		char[] charArray = id.toCharArray();
+		for(int i=0 ; i<charArray.length ; i++) {
+			System.out.println(charArray[i]+"-");
+		}
+		
 		boolean isOk = ValidateId(id);
 		
 		
