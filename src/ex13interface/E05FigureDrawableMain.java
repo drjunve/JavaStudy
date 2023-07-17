@@ -1,9 +1,9 @@
 package ex13interface;
 
 import ex13interface.figure.IFigure;
+import ex13interface.figure.Rectangle;
 
 /* 다른 패키지에 선언된 인터페이스 혹은 클래스이므로 사용을 위해 반드시 임포트 해야한다. */
-import
 
 public class E05FigureDrawableMain {
 
