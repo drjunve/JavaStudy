@@ -1,7 +1,7 @@
 
 package Training;
 
-public class ex14_e01_1 {
+public class ex15_e01_1 {
 
 	public static void main(String[] args) {
 		
