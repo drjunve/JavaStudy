@@ -23,7 +23,7 @@ public class E04CallByReference {
 		//배열 인스턴스의 참조값을 인수로 전달한다.
 		callByReference(arr);
 		
-		/* 지역은 달라도 같은 메모리를 참조하므로 동일한 결과가 출력된다.
+		/* 지역은 달라도 같은 메모리를 참조하므로 동일한 결과가 출력된다.0
 		출력3 : 200, 100 */
 		System.out.println("[메인메소드]-Swap이후 출력");
 		for(int i =0 ; i<arr.length ; i++) {

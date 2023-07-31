@@ -34,7 +34,36 @@ public class ex15_e01_2 {
 		System.out.println(Character.isLetter('#'));
 		System.out.println(Character.isLetter('9'));
 		
+		System.out.println("isWhitespace() 메소드로 공백문자 판단");
+		System.out.println(Character.isWhitespace('A'));
+		System.out.println(Character.isWhitespace(' '));
+		
 		System.out.println("알파벳 대소문자 판단");
-		System.out.println(Character.isLowerCaseCa));
+		System.out.println(Character.isLowerCase('A'));
+		System.out.println(Character.isLowerCase('z'));
+		System.out.println(Character.isLowerCase('a'));
+		System.out.println(Character.isLowerCase('Z'));
+		System.out.println(Character.isLowerCase('가'));
+		
+		/* 시나리오] 주어진 문자열안에 몇개의 공백문자(스페이스)가 있는지
+		 * 판단하는 프로그램을 작성하시오.
+		 * 	참고) toCharArray() : 문자열을 char형 배열로 반환해주는
+		 * 	String클래스에 정의된 메소드 */
+		
+		String whiteString = "h e l l           o";
+		
+		tarArray[] = whiteString.toCharArray();
+		System.out.println(
+		);
 	}
 }
+
+
+
+
+
+
+
+
+
+
