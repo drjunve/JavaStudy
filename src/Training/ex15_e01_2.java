@@ -52,9 +52,19 @@ public class ex15_e01_2 {
 		
 		String whiteString = "h e l l           o";
 		
-		tarArray[] = whiteString.toCharArray();
-		System.out.println(
-		);
+		/**********************선생님 코드**************************/
+		char[] chArr = whiteString.toCharArray();
+		
+		int whiteCnt = 0;
+		for(int i = 0; i<chArr.length ; i++) {
+			if(Character.isWhitespace(chArr[i])) {
+				whiteCnt++;
+			}
+		}
+		System.out.println("공백갯수:"+whiteCnt);
+		/*********************선생님 코드 끝*************************/
+		
+		
 	}
 }
 
