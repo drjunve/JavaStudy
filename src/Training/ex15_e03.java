@@ -33,6 +33,17 @@ public class ex15_e03 {
 		System.out.println("Math.round:");
 		System.out.println("Math.round:");
 		
+		System.out.println("최대 / 최소");
+		System.out.println("Math.max:"+Math.max(100,  99));
+		System.out.println("Math.min:"+Math.min(100,  99));
+		
+		System.out.println("난수");
+		System.out.println((int)Math.random());
+		
+		System.out.println("거듭제곱");
+		System.out.println("2의 10승은? "+Math.pow(2, 10));
+		
+		
 		
 		
 	}

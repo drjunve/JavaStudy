@@ -46,7 +46,7 @@ public class E04Object2MyEquals {
 		}
 		//정의한 클래스를 통해 인스턴스를 생성한다.
 		IntNumber num1 = new IntNumber(10);
-		IntNumber num2 = new IntNumber(10);
+		IntNumber num2 = new IntNumber(20);
 		IntNumber num3 = new IntNumber(10);
 		
 		/* 개발자가 직접 정의한 myEquals() 메서드를 통해 객체간의
