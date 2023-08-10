@@ -29,14 +29,13 @@ public class Ex04HashSet1 {
 		Date varDate = new Date();
 		int varInt = 100; //저장시 Integer로 Boxing 처리됨.
 		Teacher varTeacher = new Teacher("김봉두", 55, "체육");
-		
 		/*
 		객체저장 : add()메서드를 통해 저장하고, 성공하면 true를 반환한다. */
 		System.out.println("add결과:"+set.add(varString1));
 		set.add(varString2);
 		set.add(varDate);
 		set.add(varInt);
-		set.add(varTeacher);
+		set.add(varTeacher);//returnCode 반환 / 왜?
 		
 		// size()를 통해 저장된 객체수를 알 수 있다. 5개 출력됨
 		System.out.println(set.add(new String("개발자")) ? "저장성공" : "저장실패");
